@@ -1,0 +1,17 @@
+
+<h1>{{title}}</h1>
+    {{#if click}}
+    {{#each list}}
+    <div>
+        <a href="/update?FIO={{FIO}}">{{FIO}}  {{number}}</a>
+        </br>
+    </div>
+    {{/each}}
+    {{else}}
+    {{#each list}}
+    <div>
+        <a>{{FIO}}  {{number}}</a>
+        </br>
+    </div>
+    {{/each}}
+    {{/if}}
